@@ -70,7 +70,6 @@ ol {
   justify-content: space-between;
   inline-size: 100%;
   max-inline-size: 1140px;
-  block-size: 70vh;
   gap: 30px;
   padding: 133px 30px;
 }
@@ -123,6 +122,7 @@ ol {
   border: none;
   border-block-start: 1px solid #fff;
   border-block-end: 1px solid #fff;
+  font-family: Arial, "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
@@ -172,6 +172,7 @@ ol {
 .button {
   background: transparent;
   border: 1px solid #fff;
+  font-family: inherit;
   color: #fff;
   font-size: 18px;
   font-weight: 700;
@@ -179,7 +180,7 @@ ol {
   text-align: center;
   padding: 6px 73.5px;
   inline-size: 194px;
-  block-size: 34px;
+  min-block-size: 34px;
 }
 .button:hover {
   text-decoration: underline;
