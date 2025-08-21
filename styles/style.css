@@ -122,7 +122,7 @@ ol {
   border: none;
   border-block-start: 1px solid #fff;
   border-block-end: 1px solid #fff;
-  font-family: inherit;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
