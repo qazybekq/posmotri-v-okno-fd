@@ -70,8 +70,8 @@ ol {
   justify-content: space-between;
   inline-size: 100%;
   max-inline-size: 1140px;
-  gap: 30px;
-  padding: 133px 30px;
+  /* gap: 30px; */
+  /* padding: 133px 30px; */
 }
 
 .result {
@@ -242,10 +242,13 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  min-inline-size: 0;
 }
 
 .content__list-item {
-  padding-inline: 3px;
+  padding-inline: 4px;
+  min-inline-size: 0;
+  min-width: 0;
 }
 
 .content__card-link {
@@ -253,6 +256,8 @@ ol {
   text-decoration: none;
   color: #fff;
   margin: 2px;
+  inline-size: 100%;
+  width: 100%;
 }
 .content__card-link:hover {
   text-decoration: underline;
@@ -273,14 +278,17 @@ ol {
 
 .content__video-card {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 12px;
+  inline-size: 100%;
 }
 .content__video-card-description-container {
-  flex: 1 1 auto;
-  min-inline-size: 0;
-  margin-inline-end: 30px;
+
+  flex: 1 1 auto;     
+  min-inline-size: 0;   
+  /* margin-inline-end: 30px; */
+  min-width: 0;  
 }
 .content__video-card-title {
   font-family: 'Oswald', sans-serif;
@@ -288,10 +296,15 @@ ol {
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
-  margin-block-end: 6px;
+  /* margin-block-end: 6px; */
+  width: 11rem;           
+
   text-overflow: ellipsis;
-  white-space: nowrap;
+  display: block;
   overflow: hidden;
+  white-space: nowrap;
+  max-inline-size: 100%;
+  min-inline-size: 0;
 }
 .content__video-card-description {
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -300,7 +313,7 @@ ol {
   line-height: 1.2;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   overflow: hidden;
 }
 .content__video-card-thumbnail {
@@ -308,6 +321,7 @@ ol {
   block-size: 103px;
   object-fit: cover;
   object-position: center;
+  flex: 0 0 194px;
 }
 
 .more-button {
